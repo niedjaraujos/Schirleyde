@@ -3,8 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Fonoaudióloga em Cabo de Santo Agostinho | Schirleyde Silva</title>
+    <link rel="icon" type="image/png" href="assets/favicon.svg" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- skip-link -->
+    <a href="#main-content" class="skip-link">
+      Pular para o conteúdo principal
+    </a>
+
+    <header>
+      <div class="header__container">
+        <a href="#home" class="header__logo" aria-label="Ir para o início">
+          <img src="./assets/favicon.svg" alt="Logo Schirleyde Silva" />
+          <span class="logo__title">Schirleyde Silva</span>
+        </a>
+        <button
+          class="menu-hamburguer"
+          aria-label="menu de navegação"
+          aria-expanded="false"
+          aria-controls="navbar"
+          type="button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon-open"
+            aria-hidden="true"
+          >
+            <title>Abrir menu de navegação</title>
+            <line x1="6" x2="34" y1="20" y2="20" />
+            <line x1="6" x2="34" y1="10" y2="10" />
+            <line x1="6" x2="34" y1="30" y2="30" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon-close"
+            aria-hidden="true"
+          >
+            <title>Fechar menu</title>
+            <path d="M30 10 10 30" />
+            <path d="m10 10 20 20" />
+          </svg>
+        </button>
+        <nav class="nav" aria-label="Navegação Principal" id="navbar">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link">Home</a></li>
+            <li>
+              <a href="#especialiazacoes" class="nav__link">Especializações</a>
+            </li>
+            <li><a href="#sobre" class="nav__link">Sobre</a></li>
+            <li>
+              <a href="#depoimentos" class="nav__link">Depoimentos</a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/5581998080366?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta"
+                class="nav__contato"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir conversa no WhatsApp para agendamento"
+                >WhatsApp</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
 </html>
