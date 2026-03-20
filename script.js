@@ -7,3 +7,32 @@ window.addEventListener("scroll", () => {
     scrollBar.classList.remove("scrolled");
   }
 });
+//Menu hamburguer
+
+const menu = document.querySelector(".menu-hamburguer");
+const navList = document.querySelector(".nav");
+const navLinks = document.querySelectorAll(".nav__link");
+
+menu.addEventListener("click", () => {
+  navList.classList.toggle("active");
+  menu.classList.toggle("active");
+
+  //Ação do leitor de tela ao clicar no menu hamburguer,
+  // Verifica se está aberto ou fechado
+  const isExpanded = navList.classList.contains("active");
+
+  // Atualiza aria-expanded dinamicamente
+  menu.setAttribute("aria-expanded", isExpanded);
+});
+
+// Fechar o menu ao clicar em um link
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    // Remove a classe active do menu e da lista
+    navList.classList.remove("active");
+    menu.classList.remove("active");
+
+    // Atualiza o aria-expanded para false também ao clicar no link
+    menu.setAttribute("aria-expanded", "false");
+  });
+});
