@@ -7,3 +7,32 @@
   list-style: none;
   text-decoration: none;
 }
+:root {
+  /* BASE */
+  --color-bg: #f8f5f5;
+  --color-bg-alt: #efe7e9;
+  --color-card-bg: #ffffff;
+
+  /* TEXTO */
+  --color-text: #1f2a33;
+  --color-text-muted: #5b646b;
+
+  /* BRAND (confiança) */
+  --color-primary: #1c2b36;
+  /* ACOLHIMENTO (rosé) */
+  --color-accent: #d9a5a5;
+
+  /* AÇÃO */
+  --color-cta: #a63854;
+  --color-cta-hover: #7c2a41;
+
+  /* DETALHES */
+  --color-border: #e6dede;
+
+  --font-heading: "Lora", serif;
+  --font-base: "Nunito", sans-serif;
+
+  --border-radius-sm: 6px;
+  --border-radius-xl: 32px;
+  --width-container: 1440px;
+}
