@@ -229,7 +229,7 @@ header.scrolled {
   min-height: 100vh;
   background:
     linear-gradient(rgba(242, 234, 236, 0.8), rgb(242, 234, 236, 0.8)),
-    url("/assets/hero-bg.jpg") no-repeat center / cover;
+    url("/assets/hero-bg.webp") no-repeat center / cover;
   position: relative;
 }
 .hero::before {
@@ -333,7 +333,7 @@ h1 {
 .hero__image {
   align-self: center;
   max-width: 540px;
-  width: 100%;
+  width: 80%;
 }
 img {
   width: 100%;
@@ -391,5 +391,8 @@ h2 {
   .hero__buttons {
     flex-direction: row;
     gap: 2rem;
+  }
+  .hero__image {
+    width: 100%;
   }
 }
