@@ -15,12 +15,12 @@
   --color-card-bg: #ffffff;
 
   /* TEXTO */
-  --color-text: #1f2a33;
-  --color-text-muted: #5b646b;
+  --color-text: #082136;
+  --color-text-muted: #2f485e;
 
   /* BRAND (confiança) */
 
-  --color-primary: #1c2b36;
+  --color-primary: #012b47;
   /* ACOLHIMENTO (rosé) */
   --color-accent: #be6363;
 
@@ -406,7 +406,6 @@ h2 {
 }
 .card-6 {
   background: var(--c6);
-  color: #333;
 }
 .servicos__card img {
   width: 50px;
