@@ -21,15 +21,14 @@
   /* BRAND (confiança) */
 
   --color-primary: #012b47;
+
   /* ACOLHIMENTO (rosé) */
   --color-accent: #be6363;
+  --color-accent-light: #f3aeae;
 
   /* AÇÃO */
   --color-cta: #a63854;
   --color-cta-hover: #7c2a41;
-
-  /* DETALHES */
-  --color-border: #e6dede;
 
   /* FONTES */
   --font-heading: "Lora", serif;
@@ -263,10 +262,9 @@ header.scrolled {
 }
 .hero__container {
   display: flex;
-  align-items: center;
   flex-direction: column;
   gap: 5rem;
-  padding-block: 1.5rem;
+  padding-top: 2rem;
   animation: fadeInUp 2s ease-in-out;
 }
 .hero__content {
@@ -444,6 +442,74 @@ h2 {
     transform: translateY(0);
   }
 }
+
+.processo h2 {
+  text-align: center;
+}
+.processo__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  position: relative;
+  margin-top: 4rem;
+}
+.processo__list::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-accent) 20%,
+    var(--color-accent) 80%,
+    transparent
+  );
+}
+.processo__item {
+  text-align: center;
+  position: relative;
+  padding-top: 0.5rem;
+}
+.processo__item-title {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--color-cta-hover);
+  margin-bottom: 0.6rem;
+}
+.processo__item-text {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.processo__item-num {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(
+    135deg,
+    var(--color-accent),
+    var(--color-accent-light)
+  );
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--color-bg);
+  box-shadow: 0 8px 24px rgba(201, 137, 122, 0.35);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+.processo__item:hover .processo__item-num {
+  transform: scale(1.08);
+}
+
 @media (width >= 1024px) {
   section {
     padding-block: 8rem;
@@ -490,5 +556,8 @@ h2 {
   }
   .servicos__grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .processo__list {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
