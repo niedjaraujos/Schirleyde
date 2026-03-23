@@ -65,7 +65,7 @@ body {
   text-rendering: optimizeLegibility; /*melhora a legibilidade do texto. */
 }
 section {
-  padding: 5rem 1.5rem;
+  padding: 5rem 0;
 }
 /* Acessibilidade -tab- a borda só aparece quando o usuário navega usando o teclado */
 a:focus-visible {
@@ -100,8 +100,8 @@ h3 {
 .container {
   width: 100%;
   max-width: var(--width-container);
-
   margin-inline: auto;
+  padding-inline: 1.5rem;
 }
 button {
   background: none;
@@ -125,7 +125,6 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding-inline: 1.5rem;
   z-index: 1000;
   background: transparent;
 }
@@ -139,6 +138,7 @@ header.scrolled {
   margin: 1rem auto;
   justify-content: space-between;
   max-width: var(--width-container);
+  padding-inline: 1.5rem;
   position: relative;
 }
 .header__logo {
@@ -384,9 +384,9 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: var(--border-radius-xl);
-  box-shadow: 0 15px 40px rgba(70, 68, 68, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
 .card-1 {
@@ -415,14 +415,15 @@ h2 {
   transform: translateY(-4px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
-.servicos-card__title {
+.servicos__card-title {
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-style: italic;
 }
 
-.servicos-card__text {
+.servicos__card-text {
   font-size: 0.95rem;
   margin-bottom: 1rem;
+  line-height: 1.6;
 }
 .servicos__list {
   padding-left: 1rem;
@@ -480,7 +481,7 @@ h2 {
     margin-inline: auto;
   }
   .hero__content {
-    text-align: start;
+    text-align: left;
   }
   .hero__buttons {
     flex-direction: row;
