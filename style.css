@@ -135,10 +135,8 @@ header.scrolled {
 .header__container {
   display: flex;
   align-items: center;
-  margin: 1rem auto;
+  margin-block: 1rem;
   justify-content: space-between;
-  max-width: var(--width-container);
-  padding-inline: 1.5rem;
   position: relative;
 }
 .header__logo {
