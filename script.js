@@ -22,7 +22,13 @@ menu.addEventListener("click", () => {
   const isExpanded = navList.classList.contains("active");
 
   // Atualiza aria-expanded dinamicamente
-  menu.setAttribute("aria-expanded", isExpanded);
+  menu.setAttribute("aria-expanded", isExpanded ? "true" : "false");
+
+  if (isExpanded) {
+    navLinks[0].focus();
+  } else {
+    menu.focus();
+  }
 });
 
 // Fechar o menu ao clicar em um link
@@ -34,8 +40,19 @@ navLinks.forEach((link) => {
 
     // Atualiza o aria-expanded para false também ao clicar no link
     menu.setAttribute("aria-expanded", "false");
+    menu.focus();
   });
 });
+// para uso do teclado
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && navList.classList.contains("active")) {
+    navList.classList.remove("active");
+    menu.classList.remove("active");
+    menu.setAttribute("aria-expanded", "false");
+    menu.focus();
+  }
+});
+
 // Intersection Observer para animações ao scroll
 const observer = new IntersectionObserver(
   (entries, observer) => {

@@ -68,22 +68,24 @@ section {
   padding: 5rem 0;
 }
 /* Acessibilidade -tab- a borda só aparece quando o usuário navega usando o teclado */
-a:focus-visible {
+:focus-visible {
   outline: 3px solid var(--color-cta);
-  outline-offset: 2px;
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 .skip-link {
+  position: fixed;
   display: block;
   position: fixed;
-  top: -70px;
-  left: 40%;
-  background: #9e4444;
-  color: #ffffff;
-  padding: 4px 16px;
+  top: -80px;
+  left: 50%;
+  background: var(--color-cta);
+  color: var(--color-white);
+  padding: 8px 16px;
   z-index: 99999;
 }
 .skip-link:focus {
-  top: 4px;
+  top: 8px;
 }
 h1,
 h2,
