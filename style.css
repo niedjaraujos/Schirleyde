@@ -156,12 +156,12 @@ header.scrolled {
   position: relative;
 }
 .header__logo {
-  color: var(--color-cta-hover);
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 .header__logo svg {
+  color: var(--color-cta);
   font-size: 2rem;
   user-select: none;
 }
