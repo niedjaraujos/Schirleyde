@@ -72,3 +72,6 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((el) => {
   observer.observe(el);
 });
+
+//ano automatico
+document.getElementById("year").textContent = new Date().getFullYear();

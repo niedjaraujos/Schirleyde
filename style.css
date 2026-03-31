@@ -48,8 +48,8 @@
 }
 /* estilizações globais */
 html {
-  scroll-behavior: smooth; /*movimento suave*/
-  scroll-padding-top: 5rem; /*evita que conteudo grude no topo*/
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 body {
   min-height: 100vh;
@@ -156,16 +156,17 @@ header.scrolled {
   position: relative;
 }
 .header__logo {
+  color: var(--color-cta-hover);
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.header__logo img {
-  width: 50px;
+.header__logo svg {
+  font-size: 2rem;
   user-select: none;
 }
 .logo__title {
-  color: var(--color-text);
+  color: var(--color-primary);
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -656,13 +657,13 @@ h1 {
   grid-template-columns: 1fr;
   gap: 2rem;
 }
-
 .depoimentos__item {
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
   border-radius: var(--border-radius-sm);
+  min-height: 220px;
 }
 .depoimentos__item-header {
   display: flex;
@@ -679,7 +680,6 @@ h1 {
   color: var(--color-text-muted);
   position: relative;
 }
-
 .depoimentos__quote::before {
   content: "“";
   font-size: 2.5rem;
@@ -688,7 +688,19 @@ h1 {
   top: -0.8rem;
   color: var(--color-accent);
 }
-/* CTA */
+.depoimentos__item--placeholder {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.depoimentos__placeholder-text {
+  font-style: italic;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  max-width: 18rem;
+}
+/* CTA BANNER */
 .cta {
   background: linear-gradient(135deg, var(--color-primary) 0%, #045f9c 100%);
   box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.2);
@@ -722,7 +734,6 @@ h1 {
 .btn-cta:hover {
   background-color: var(--color-cta-hover);
 }
-
 /* FAQ */
 .faq {
   background-color: var(--color-bg-alt);
@@ -732,7 +743,6 @@ h1 {
   margin: 0 auto 2.5rem;
   text-align: center;
 }
-
 .faq__list {
   display: grid;
   gap: 1rem;
@@ -812,6 +822,107 @@ h1 {
   outline: 3px solid var(--color-cta);
   outline-offset: -3px;
   border-radius: 1rem;
+}
+.faq__final-text {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  max-width: 22rem;
+  margin-inline: auto;
+}
+.faq__final-text a {
+  display: inline-block;
+  margin-top: 0.25rem;
+  color: var(--color-cta);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+}
+.faq__final-text a:hover {
+  color: var(--color-accent);
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 5rem 1rem 1.5rem;
+}
+.footer__container {
+  max-width: var(--width-container);
+}
+.footer__grid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.footer__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-accent-light);
+}
+.footer__subtitle {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  color: var(--color-accent-light);
+}
+.footer__text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer__social-link,
+.location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.footer__social-link::after,
+.location::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-bg);
+  transition: ease-in-out 0.3s;
+  margin-top: 0.4rem;
+}
+.footer__social-link:hover::after,
+.footer__social-link:focus::after,
+.location:hover::after,
+.location:focus::after {
+  width: 100%;
+}
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 1rem;
+  text-align: center;
+}
+.footer__copy {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media (width >= 768px) {
@@ -899,5 +1010,8 @@ h1 {
     gap: 3rem;
     padding: 2.5rem 4rem;
     text-align: left;
+  }
+  .footer__grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
