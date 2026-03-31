@@ -274,7 +274,7 @@ header.scrolled {
   gap: 3rem;
   padding-top: 2rem;
   margin-inline: auto;
-  animation: fadeInUp 2s ease-in-out;
+  animation: fadeInUp 0.8s ease-in-out;
 }
 .hero__content {
   display: flex;
