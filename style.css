@@ -94,7 +94,7 @@ h3 {
   color: var(--color-primary);
 }
 h2 {
-  font-size: clamp(1rem, 10vw, 3rem);
+  font-size: clamp(1.75rem, 5vw, 3rem);
   line-height: 1.2;
   font-weight: 400;
 }
@@ -338,7 +338,9 @@ h1 {
 .socialProof {
   opacity: 0.85;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
 .proof-num {
   font-family: var(--font-heading);
@@ -688,18 +690,7 @@ h1 {
   top: -0.8rem;
   color: var(--color-accent);
 }
-.depoimentos__item--placeholder {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 
-.depoimentos__placeholder-text {
-  font-style: italic;
-  color: var(--color-text-muted);
-  line-height: 1.6;
-  max-width: 18rem;
-}
 /* CTA BANNER */
 .cta {
   background: linear-gradient(135deg, var(--color-primary) 0%, #045f9c 100%);
@@ -750,8 +741,7 @@ h1 {
   margin: 0 auto;
 }
 .faq__item {
-  background-color: var(--color-card-bg);
-  border: 1px solid var(--color-border);
+  background-color: var(--color-bg);
   border-radius: 1rem;
   overflow: hidden;
   transition:
@@ -760,7 +750,6 @@ h1 {
     transform 0.3s ease;
 }
 .faq__item:hover {
-  border-color: var(--color-accent);
   box-shadow: 0 10px 30px rgba(1, 43, 71, 0.08);
 }
 .faq__item[open] {
@@ -985,9 +974,13 @@ h1 {
     flex-wrap: wrap;
     align-items: center;
   }
+  .socialProof {
+    justify-content: space-between;
+  }
   .hero__image {
     width: 100%;
   }
+
   .servicos__grid,
   .depoimentos__grid {
     grid-template-columns: repeat(3, 1fr);

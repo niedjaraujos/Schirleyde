@@ -291,18 +291,21 @@
           <figure class="hero__image">
             <img
               src="/assets/reservaHero.webp"
-              alt="Fonoaudióloga Schirleyde Silva em clinica terapeutica"
+              alt="Fonoaudióloga Schirleyde Silva em clínica terapêutica"
               loading="eager"
               fetchpriority="high"
             />
           </figure>
         </div>
       </section>
+
       <!-- SERVIÇOS -->
-      <section id="servicos" class="servicos">
+      <section id="servicos" class="servicos" aria-labelledby="servicos-title">
         <div class="container">
           <div class="servicos__header">
-            <h2>Serviços <span class="italic">especializados</span></h2>
+            <h2 id="servicos-title">
+              Serviços <span class="italic">especializados</span>
+            </h2>
             <p class="description">
               Atendimento especializado com foco no desenvolvimento da
               comunicação e qualidade de vida.
@@ -428,20 +431,23 @@
           </div>
         </div>
       </section>
+
       <!-- SOBRE -->
-      <section id="sobre" class="sobre">
+      <section id="sobre" class="sobre" aria-labelledby="sobre-title">
         <div class="sobre__container">
           <div class="sobre__image">
             <img
-              src="./assets/shirleyde.webp"
-              alt=" Fonoaudióloga Schirleyde Silva em uma sala terapeutica"
+              src="./assets/schirleyde.webp"
+              alt="Fonoaudióloga Schirleyde Silva em uma sala terapêutica"
               loading="lazy"
             />
           </div>
           <div class="sobre__content">
             <div class="sobre__header">
               <span class="subtitle">Fonoaudióloga Schirleyde Silva</span>
-              <h2>Sobre a <span class="italic">terapeuta</span></h2>
+              <h2 id="sobre-title">
+                Sobre a <span class="italic">terapeuta</span>
+              </h2>
             </div>
             <div class="sobre__text">
               <p>
@@ -563,12 +569,13 @@
           </div>
         </div>
       </section>
+
       <!-- PROCESSO -->
-      <section class="processo">
+      <section class="processo" aria-labelledby="processo-title">
         <div class="container reveal">
           <div class="processo__header">
             <span class="subtitle">Seu caminho para a evolução</span>
-            <h2>Como funciona o atendimento</h2>
+            <h2 id="processo-title">Como funciona o atendimento</h2>
           </div>
           <ul class="processo__list">
             <li class="processo__item">
@@ -605,7 +612,7 @@
             </li>
           </ul>
 
-          <div class="cta-inline" aria-label="Chamada para agendamento">
+          <div class="cta-inline">
             <p class="cta-inline__text">Pronto para dar o primeiro passo?</p>
             <a
               href="https://wa.me/5581998080366?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta"
@@ -633,79 +640,20 @@
       </section>
 
       <!-- DEPOIMENTOS -->
-      <section class="depoimentos" id="depoimentos">
+      <section
+        class="depoimentos"
+        id="depoimentos"
+        aria-labelledby="depoimentos-title"
+      >
         <div class="container">
           <div class="depoimentos__header">
             <span class="subtitle">Depoimentos</span>
-            <h2>O que dizem meus <span class="italic">pacientes</span></h2>
+            <h2 id="depoimentos-title">
+              O que dizem meus <span class="italic">pacientes</span>
+            </h2>
           </div>
 
           <ul class="depoimentos__grid reveal">
-            <li class="depoimentos__item">
-              <div class="depoimentos__item-header">
-                <div>
-                  <h3>Reservado Antonela</h3>
-                  <span>Reservado</span>
-                </div>
-                <div class="depoimentos__stars">
-                  <svg
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.87 1.402-8.168L.132 9.21l8.2-1.193z"
-                    />
-                  </svg>
-                  <svg
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.87 1.402-8.168L.132 9.21l8.2-1.193z"
-                    />
-                  </svg>
-
-                  <svg
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.87 1.402-8.168L.132 9.21l8.2-1.193z"
-                    />
-                  </svg>
-                  <svg
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.87 1.402-8.168L.132 9.21l8.2-1.193z"
-                    />
-                  </svg>
-                  <svg
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.87 1.402-8.168L.132 9.21l8.2-1.193z"
-                    />
-                  </svg>
-                </div>
-              </div>
-
-              <blockquote class="depoimentos__quote">
-                <p>Reservado</p>
-              </blockquote>
-            </li>
             <li class="depoimentos__item">
               <div class="depoimentos__item-header">
                 <div>
@@ -841,81 +789,6 @@
                   vemos a evolução do meu filho.
                 </p>
               </blockquote>
-            </li>
-            <li class="depoimentos__item">
-              <div class="depoimentos__item-header">
-                <div>
-                  <h3>Reservado Dayse</h3>
-                  <span>reservado</span>
-                </div>
-                <div class="depoimentos__stars">
-                  <svg
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.87 1.402-8.168L.132 9.21l8.2-1.193z"
-                    />
-                  </svg>
-                  <svg
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.87 1.402-8.168L.132 9.21l8.2-1.193z"
-                    />
-                  </svg>
-
-                  <svg
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.87 1.402-8.168L.132 9.21l8.2-1.193z"
-                    />
-                  </svg>
-                  <svg
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.87 1.402-8.168L.132 9.21l8.2-1.193z"
-                    />
-                  </svg>
-                  <svg
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.87 1.402-8.168L.132 9.21l8.2-1.193z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <blockquote class="depoimentos__quote">
-                <p>Em breve, mais relatos de famílias atendidas</p>
-              </blockquote>
-            </li>
-            <li class="depoimentos__item depoimentos__item--placeholder">
-              <p class="depoimentos__placeholder-text">
-                Em breve, mais relatos de famílias atendidas 💬
-              </p>
-            </li>
-
-            <li class="depoimentos__item depoimentos__item--placeholder">
-              <p class="depoimentos__placeholder-text">
-                Seu depoimento pode estar aqui ✨
-              </p>
             </li>
           </ul>
         </div>
