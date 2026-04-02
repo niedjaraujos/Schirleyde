@@ -671,26 +671,21 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
-.depoimentos__stars {
-  color: #d4a017;
-}
+
 .depoimentos__quote {
   border-left: 4px solid var(--color-accent);
   padding-left: 1.3rem;
   margin-top: 1rem;
   font-style: italic;
   color: var(--color-text-muted);
-  position: relative;
 }
-.depoimentos__quote::before {
-  content: "“";
-  font-size: 2.5rem;
-  position: absolute;
-  left: 2px;
-  top: -0.8rem;
+.depoimentos__aspas {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  line-height: 1;
   color: var(--color-accent);
+  opacity: 0.8;
 }
-
 /* CTA BANNER */
 .cta {
   background: linear-gradient(135deg, var(--color-primary) 0%, #045f9c 100%);
